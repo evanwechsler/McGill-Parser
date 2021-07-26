@@ -14,7 +14,7 @@ If you have any suggestions please let me know or make a PR.
 4. `python3 -m venv env`
 5. `source env/bin/activate`
 6. `pip install pandas`
-7. Run the main.py file to extract all course and program data into a spreadsheet
+7. Run the `main.py` file to extract all course and program data into a spreadsheet
 
 # What the parser will do for you
 
