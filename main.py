@@ -2,14 +2,17 @@ from courses import get_all_courses
 from programs import get_all_programs
 import pandas as pd
 import time
+import datetime
 
 def main():
     """Method for getting course and program data and saving it to an excel sheet in the root directory
     """
     courses, course_errors = get_all_courses()
     programs, program_errors = get_all_programs()
+    now = datetime.datetime.now()
+    path = f"./McGill-{now.year}-{now.month}-{now.day}"
 
-    with pd.ExcelWriter("./McGill.xlsx") as writer: # pylint: disable=abstract-class-instantiated
+    with pd.ExcelWriter(path) as writer: # pylint: disable=abstract-class-instantiated
         courses.to_excel(writer, sheet_name="Courses")
         programs.to_excel(writer, sheet_name="Programs")
 
