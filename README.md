@@ -16,6 +16,8 @@ If you have any suggestions please let me know or make a PR.
 6. `pip install pandas`
 7. Run the `main.py` file to extract all course and program data into a spreadsheet
 
+**Alternatively:** Just download the excel spreadsheet and you should have the updated info for the given year. Note that some program and courses have 0 credits because some of there titles to not indicate the number of credits or use a different metric that wasn't useful for my application.
+
 # What the parser will do for you
 
 After running `main.py` you will have an excel spreadsheet generated in the same directory as the project. This spreadsheet contains 2 sheets:
